@@ -12,10 +12,6 @@ body{
 
 
 
-.article_details > .article-image{
-  background-size: 100% 100%;
-}
-
 
 .box{
   background-image: url("Resources/video-bkgd.png");
@@ -29,6 +25,13 @@ body{
     border-bottom: thin solid lightgray ;
     height: 190px;
 }
+
+
+.article_details > .article-image{
+  background-size: 100% 100%;
+}
+
+/*Box-Top Properties*/
 
 .titles{
     width: 45%;
@@ -50,12 +53,12 @@ body{
     margin-right: 2%;
 }
 
-.box-bottom{
-	padding-top: 10%;
+#main-item {
+  width: 96%;
+  height: 130px;
+  margin-left: 2%;
+  padding-bottom:0px;
 }
-
-
-
 
 #main-article-img{
     overflow: hidden;
@@ -65,23 +68,18 @@ body{
     width: 100%;
 }
 
-#main-article-img:after{
+#main-article-img > #play-big-img{
   position: relative;
   top: 90px;
   left: 0px;
+	width: 160%;
 }
 
-#main-article-img:hover:after {
-  top: -200px;
+#main-article-img:hover > #play-big-img {
+  top: -82px;
   left: 0px;
 }
 
-div#main-item {
-  width: 96%;
-  height: 130px;
-  margin-left: 2%;
-  padding-bottom:0px;
-}
 #main-item-description{
   display: inline-block;
   font-weight: bold;
@@ -91,13 +89,18 @@ div#main-item {
 }
 
 
+/*Box Bottom Properties*/
+
+.box-bottom{
+	padding-top: 10%;
+}
+
 .article-item{
 	  width: 50%;
 	  float: left;
     padding-bottom:15px;
     color: rgba(0, 0, 0, 0.75);
 }
-
 
 .article-image{
   overflow: hidden;
@@ -110,13 +113,6 @@ div#main-item {
   margin-bottom: 4px;
 }
 
-.article-image:after{
-  content: url(/Users/raz/Desktop/deleteThis/widget-test/Resources/video-play-icon-overlay.png);
-  position: relative;
-  top: 100%;
-  left: 100%;
-}
-
 .box-bottom .article-image:hover{
   border-bottom: 4px solid #4db74d;
   border-top: 4px solid #4db74d;
@@ -124,12 +120,23 @@ div#main-item {
   margin-bottom: 0px;
 }
 
-.box-bottom .article-image:hover:after{
+.box-bottom .article-item:hover{
+	color: #4db74d;
+}
 
-  display: inline-block;
-  top: 17px;
-  left: 8px;
-  transform: scale(0.9,1.1);
+.box-bottom .article-image:hover > .play-small-img{
+	top: 1px;
+	left: 24px;
+}
+
+
+.article-image .play-small-img{
+  position: relative;
+  top: 100%;
+  left: 100%;
+	width: 380px;
+  height: 300px;
+
 }
 
 .article-details {
