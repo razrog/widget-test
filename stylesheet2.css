@@ -99,6 +99,7 @@ body{
 	  width: 50%;
 	  float: left;
     padding-bottom:15px;
+		min-height: 100px;
     color: rgba(0, 0, 0, 0.75);
 }
 
